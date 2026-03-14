@@ -1,9 +1,9 @@
-# Adobe-India-Hackathon25-Round1_Submission-Brahmos
-This is the submission repository for Round 1 of Adobe India Hackathon 2025,  Connecting the Dots Challenge, It has submission for Round 1A and 1B
+# Adobe-India-Hackathon25-Round2_Submission-Brahmos
+This is the submission repository for Round 2 of Adobe India Hackathon 2025,  Connecting the Dots Challenge, It has submission for Round 2A and 2B
 
 # Adobe India Hackathon 2025 - "Connecting the Dots" Challenge
 
-## 🎯 Project Overview
+## Project Overview
 
 **Rethink Reading. Rediscover Knowledge**
 
@@ -12,9 +12,9 @@ This repository contains complete solutions for Adobe India Hackathon 2025's "Co
 ### Challenge Vision
 What if every time you opened a PDF, it didn't just sit there—it spoke to you, connected ideas, and narrated meaning across your entire library? That's the future we're building.
 
-## 🏆 Achievements & Constraints Passed
+## Achievements & Constraints Passed
 
-### ✅ Round 1A: PDF Outline Extraction
+### Round 1A: PDF Outline Extraction
 - **Execution Time**: ≤ 10 seconds for 50-page PDFs ✓
 - **Model Size**: ≤ 200MB (No ML models used, PyMuPDF only) ✓
 - **Network**: No internet access required ✓
@@ -24,7 +24,7 @@ What if every time you opened a PDF, it didn't just sit there—it spoke to you,
 - **Output Format**: Valid JSON with title, H1/H2/H3 headings ✓
 - **Multilingual**: Bonus multilingual handling support ✓
 
-### ✅ Round 1B: Persona-Driven Document Intelligence
+### Round 1B: Persona-Driven Document Intelligence
 #### the challenge1b_output.json has been left unpopulated initially and the output will be generated when docker is run
 - **Processing Time**: ≤ 60 seconds for document collections ✓
 - **Model Size**: ≤ 1GB ✓
@@ -34,7 +34,7 @@ What if every time you opened a PDF, it didn't just sit there—it spoke to you,
 - **Persona Support**: Travel Planner, HR Professional, Food Contractor ✓
 - **Collection Processing**: 3-10 PDFs per collection ✓
 
-## 🚀 Project Structure
+## Project Structure
 
 ```
 Adobe-India-Hackathon-2025/
@@ -61,7 +61,7 @@ Adobe-India-Hackathon-2025/
 └── README.md                      # This file
 ```
 
-## 🎯 Challenge Solutions
+## Challenge Solutions
 
 ### Round 1A: Understand Your Document
 **Mission**: Extract structured outlines (title, H1/H2/H3 headings) from PDFs with machine-like precision.
@@ -92,7 +92,7 @@ Adobe-India-Hackathon-2025/
 - **HR Professional**: Prioritize forms, workflows, bulk operations, signatures
 - **Food Contractor**: Emphasize protein sources, sides, appetizers, buffet planning
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ### Challenge 1A
 ```bash
@@ -134,7 +134,7 @@ docker run --rm \
 | Collection 2 (HR) | 15 PDFs | 13.21s | ✅ |
 | Collection 3 (Food) | 9 PDFs | 10.35s | ✅ |
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Round 1A
 - **Language**: Python 3.10+
@@ -148,23 +148,3 @@ docker run --rm \
 - **Semantic Analysis**: Keyword-based TF-IDF approach
 - **Container**: Docker with optimized Python environment
 - **Architecture**: Modular pipeline design
-
-## 📋 Validation Checklist
-
-### Round 1A ✅
-- [x] All PDFs in input directory processed automatically
-- [x] JSON output files generated for each PDF
-- [x] Output format matches required structure
-- [x] Processing completes within 10 seconds for 50-page PDFs
-- [x] Solution works without internet access
-- [x] Memory usage stays within 16GB limit
-- [x] Compatible with AMD64 architecture
-- [x] Output conforms to schema requirements
-
-### Round 1B ✅
-- [x] Processing time under 60 seconds per collection
-- [x] CPU-only operation (no GPU dependencies)
-- [x] Model size within 1GB limit
-- [x] Offline operation (no internet access)
-- [x] Structured JSON output with required format
-- [x] Persona-specific
